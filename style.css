@@ -9,6 +9,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+/* Navbar Section */
 .navbar {
   background: var(--black);
   height: 60px;
@@ -86,3 +87,5 @@
     transform: translateY(-8px) rotate(-45deg);
   }
 }
+
+/* Hero Section */
