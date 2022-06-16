@@ -89,3 +89,83 @@
 }
 
 /* Hero Section */
+.hero {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
+    url("./images/gym-1.jpg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  padding: 0.5rem calc((100vw - 1200px) / 2);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.hero_content {
+  color: var(--white);
+  padding: 3rem 1rem;
+  line-height: 1;
+}
+.hero_content h1 {
+  font-size: clamp(3rem, 8vw, 7rem);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.hero_content p {
+  font-size: clamp(1rem, 4vw, 2.5rem);
+  margin-bottom: 3rem;
+}
+.button {
+  padding: 1rem 3rem;
+  border: none;
+  background: var(--red);
+  color: var(--white);
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s ease;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.button:hover {
+  background: var(--black);
+}
+/* Service Section */
+.services {
+  padding: 8rem calc((100vw - 1200px) / 2);
+}
+.service_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem;
+}
+.service_img {
+  height: 100%;
+  width: 100%;
+}
+.service_text {
+  color: var(--red);
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.service_title {
+  margin-bottom: 1rem;
+  font-size: clamp(2rem, 6vw, 3rem);
+}
+.sevices_features {
+  list-style: none;
+}
+.service_feature {
+  margin-bottom: 1.5rem;
+  font-size: clamp(1rem, 5vw, 1.2rem);
+}
+.fa-check-circle {
+  margin-right: 0.5rem;
+  color: var(--red);
+}
+@media screen and (max-width: 768px) {
+  .service_container {
+    grid-template-columns: 1fr;
+  }
+}
+/* member section */
